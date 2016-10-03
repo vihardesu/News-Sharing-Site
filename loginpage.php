@@ -29,7 +29,7 @@ session_start();
 <input type="text" name="last_name" placeholder="Last Name">
 <input type="text" name="newUser" placeholder="Username">
 <input type="password" name="newPass" placeholder="New Password">
-<input type="email_address" name="email" placeholder="Email Address">
+<input type="email" name="email" placeholder="Email Address">
 <input type="submit" name="submit" value="Register">
 <input type="hidden" name="token" value="<?php echo $_SESSION['token'];?>" />
 </form>

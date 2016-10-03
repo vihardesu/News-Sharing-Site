@@ -6,7 +6,8 @@ Link to URL of File-Sharing Site
 http://ec2-52-90-5-111.compute-1.amazonaws.com/~amcneel/newsSite/
 
 Summary of Creative Portion
--- We scraped articles from theonion.com, stored them in a database, and displayed them on the webpage with images and links.  
+-- We scraped articles from theonion.com, stored them in a database, and displayed them on the webpage with images and links.  Learned and used regexes to do so.
+Also, we created a database of articles and randomly display one at the bottom of the page.
 
 
 Login Information for TA

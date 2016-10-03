@@ -76,7 +76,7 @@ $_SESSION['token'] = substr(md5(rand()), 0, 10);
 
 	//delete previous articles in db
 	$deleteQuery = "Delete from articles where img_source IS NOT NULL";
-	if(mysqli_query($mysqli, $deleteQuery)){
+	if(mysqli_query($mysqli, $mysqli->real_escape_string($deleteQuery))){
 		
 	}
 	else{
@@ -234,6 +234,50 @@ $_SESSION['token'] = substr(md5(rand()), 0, 10);
 ?>
 
 </table>
+<br><br><br><br>
+
+<div class='tableHeaders' id='randomHeader'>Random Article Generator</div>
+<table id='randoms'>
+<tr>
+<th>URL</th>
+<th>Image</th>
+</tr>
+<?php
+	$mysqli = new mysqli('localhost', 'newsweb', 'ilovenews', 'newsSite');
+	if($mysqli->connect_errno) {
+		printf("Connection Failed: %s\n", $mysqli->connect_error);
+		exit;
+	}
+	$stmt = $mysqli->prepare("select random_article_ID, link, image_url from randomArticleGenerator order by rand()");
+	if(!$stmt){
+		printf("Query Prep Failed: %s\n", $mysqli->error);
+		exit;
+	}
+	 
+	$stmt->execute();
+	 
+	$stmt->bind_result($rand_id, $rand_link, $rand_img);
+	$stmt->fetch();
+
+
+?>
+<tr>
+	<td>
+		<a href=<?php echo htmlentities($rand_link); ?>>
+		<?php echo htmlentities($rand_link); ?>
+		</a>
+	</td>
+	<td>
+		<a href=<?php echo htmlentities($rand_link); ?>>
+		<img src=<?php echo htmlentities($rand_img); ?> style='width:300px; height:160px' alt='Photo Unavailable'>
+		</a>
+	</td>
+</tr>
+
+
+</table>
+
+
 </div>
 
 

@@ -7,7 +7,6 @@
 	crossorigin="anonymous">
 	<link rel="stylesheet" href="uploadStyle.css">
 </head>
-</head>
 <body>
 <?php
 session_start();
@@ -84,6 +83,7 @@ Upload Your Story Here
 	
 
 ?>
+
 
 </div>
 </body>
