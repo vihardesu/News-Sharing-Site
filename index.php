@@ -62,7 +62,7 @@ $_SESSION['token'] = substr(md5(rand()), 0, 10);
 <tr class='tableHeaders' id='onionNews'><td>News From The Onion:</td><td></td><td></td><td></td></tr>
 <tr id='onionArticles'>
 <?php
-	$mysqli = new mysqli('localhost', 'root', '', 'newssite');
+	$mysqli = new mysqli('localhost', 'newsweb', 'ilovenews', 'newssite');
 	if($mysqli->connect_errno) {
 		printf("Connection Failed: %s\n", $mysqli->connect_error);
 		exit;
@@ -154,7 +154,7 @@ $_SESSION['token'] = substr(md5(rand()), 0, 10);
 <td></td><td></td><td></td><td></td>
 </tr>
 <?php
-	$mysqli = new mysqli('localhost', 'root', '', 'newssite');
+	$mysqli = new mysqli('localhost', 'newsweb', 'ilovenews', 'newssite');
 	if($mysqli->connect_errno) {
 		printf("Connection Failed: %s\n", $mysqli->connect_error);
 		exit;

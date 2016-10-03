@@ -3,7 +3,7 @@ session_start();
 
 if(isset($_SESSION['Username'])){
 	$number = $_POST['articleNum'];
-	$mysqli = new mysqli('localhost', 'root', '', 'newssite');
+	$mysqli = new mysqli('localhost', 'newsweb', 'ilovenews', 'newssite');
 	if($mysqli->connect_errno) {
 		printf("Connection Failed: %s\n", $mysqli->connect_error);
 		exit;

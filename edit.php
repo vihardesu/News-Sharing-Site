@@ -23,7 +23,7 @@
 
 	$username = $_SESSION['Username'];
 
-	$mysqli = new mysqli('localhost', 'root', '', 'newssite');
+	$mysqli = new mysqli('localhost', 'newsweb', 'ilovenews', 'newssite');
 	$stmt = $mysqli->prepare("select uploaded_by from userarticles where id=".$number);
 	if(!$stmt){
 		printf("Query Prep Failed: %s\n", $mysqli->error);
