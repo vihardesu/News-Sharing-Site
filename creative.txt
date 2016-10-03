@@ -1,0 +1,15 @@
+Names & Student IDs
+1. Andrew McNeel 442015
+2. Vihar Desu: 443845
+
+Link to URL of File-Sharing Site
+http://ec2-52-90-5-111.compute-1.amazonaws.com/~amcneel/newsSite/
+
+Summary of Creative Portion
+-- We scraped articles from theonion.com, stored them in a database, and displayed them on the webpage with images and links.  
+
+
+Login Information for TA
+Usernames: tatertodds, whar, amcneel
+Passwords: todd, whar, lol
+
