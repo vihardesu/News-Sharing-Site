@@ -62,7 +62,7 @@ $_SESSION['token'] = substr(md5(rand()), 0, 10);
 <tr class='tableHeaders' id='onionNews'><td>News From The Onion:</td><td></td><td></td><td></td></tr>
 <tr id='onionArticles'>
 <?php
-	$mysqli = new mysqli('localhost', 'newsweb', 'ilovenews', 'newssite');
+	$mysqli = new mysqli('localhost', 'newsweb', 'ilovenews', 'newsSite');
 	if($mysqli->connect_errno) {
 		printf("Connection Failed: %s\n", $mysqli->connect_error);
 		exit;
@@ -100,7 +100,7 @@ $_SESSION['token'] = substr(md5(rand()), 0, 10);
 			$article_xpath = new DOMXPath($article_doc);
 			$content = $article_xpath->query('//div[@class="content-text"]');
 			if($content->length > 0){
-				$d = $content[0]->nodeValue;
+				$d = $content->item(0)->nodeValue;
 			}
 		}
 
@@ -154,7 +154,7 @@ $_SESSION['token'] = substr(md5(rand()), 0, 10);
 <td></td><td></td><td></td><td></td>
 </tr>
 <?php
-	$mysqli = new mysqli('localhost', 'newsweb', 'ilovenews', 'newssite');
+	$mysqli = new mysqli('localhost', 'newsweb', 'ilovenews', 'newsSite');
 	if($mysqli->connect_errno) {
 		printf("Connection Failed: %s\n", $mysqli->connect_error);
 		exit;

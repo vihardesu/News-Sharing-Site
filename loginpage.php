@@ -37,7 +37,7 @@ session_start();
 
 <?php
 //connect to database, reference this when making calls
-$mysqli = new mysqli('localhost', 'newsweb', 'ilovenews', 'newssite');
+$mysqli = new mysqli('localhost', 'newsweb', 'ilovenews', 'newsSite');
 
 if($mysqli->connect_errno) {
 	printf("Connection Failed: %s\n", $mysqli->connect_error);
@@ -75,7 +75,7 @@ if(isset($_POST['username']) && !empty($_POST['username']) && isset($_POST['pass
 //For Registration
 if(isset($_POST['first_name']) && !empty($_POST['first_name']) && isset($_POST['last_name']) && !empty($_POST['last_name']) && isset($_POST['newUser']) && !empty($_POST['newUser'])
 	&& isset($_POST['newPass']) && !empty($_POST['newPass']) && isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['submit']) && !empty($_POST['submit'])){
-		$password = password_hash($_POST['newPass'], PASSWORD_DEFAULT);
+		$password = crypt($_POST['newPass']);
 	 	$first = $mysqli->real_escape_string($_POST['first_name']);
 		$last= $mysqli->real_escape_string($_POST['last_name']);
 		$email = $mysqli->real_escape_string($_POST['email']);

@@ -4,7 +4,7 @@ session_start();
 if(isset($_SESSION['Username'])){
 	$number = $_POST['comment_id'];
 	echo $number;
-	$mysqli = new mysqli('localhost', 'newsweb', 'ilovenews', 'newssite');
+	$mysqli = new mysqli('localhost', 'newsweb', 'ilovenews', 'newsSite');
 	if($mysqli->connect_errno) {
 		printf("Connection Failed: %s\n", $mysqli->connect_error);
 		exit;

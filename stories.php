@@ -17,7 +17,7 @@
 </head>
 <body>
 <?php
-	$mysqli = new mysqli('localhost', 'newsweb', 'ilovenews', 'newssite');
+	$mysqli = new mysqli('localhost', 'newsweb', 'ilovenews', 'newsSite');
 		if($mysqli->connect_errno) {
 			printf("Connection Failed: %s\n", $mysqli->connect_error);
 			exit;
@@ -96,7 +96,7 @@
 			</form>";
 		}
 		if(isset($_POST['submitComment'])){
-			$mysqli = new mysqli('localhost', 'newsweb', 'ilovenews', 'newssite');
+			$mysqli = new mysqli('localhost', 'newsweb', 'ilovenews', 'newsSite');
 			if($mysqli->connect_errno) {
 				printf("Connection Failed: %s\n", $mysqli->connect_error);
 				exit;
@@ -120,7 +120,7 @@
 		<th>Comment</th>
 	</tr>
 	<?php
-		$mysqli = new mysqli('localhost', 'newsweb', 'ilovenews', 'newssite');
+		$mysqli = new mysqli('localhost', 'newsweb', 'ilovenews', 'newsSite');
 		if($mysqli->connect_errno) {
 			printf("Connection Failed: %s\n", $mysqli->connect_error);
 			exit;

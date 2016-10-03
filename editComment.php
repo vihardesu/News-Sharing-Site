@@ -20,7 +20,7 @@
 
 	$username = $_SESSION['Username'];
 
-	$mysqli = new mysqli('localhost', 'newsweb', 'ilovenews', 'newssite');
+	$mysqli = new mysqli('localhost', 'newsweb', 'ilovenews', 'newsSite');
 	$stmt = $mysqli->prepare("select registered_user from comments where id=".$number);
 	if(!$stmt){
 		printf("Query Prep Failed: %s\n", $mysqli->error);

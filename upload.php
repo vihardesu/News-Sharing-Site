@@ -48,7 +48,7 @@ Upload Your Story Here
 	$username = $_SESSION['Username'];
 	if(isset($username)){
 		
-		$mysqli = new mysqli('localhost', 'newsweb', 'ilovenews', 'newssite');
+		$mysqli = new mysqli('localhost', 'newsweb', 'ilovenews', 'newsSite');
 		if($mysqli->connect_errno) {
 			printf("Connection Failed: %s\n", $mysqli->connect_error);
 			exit;
