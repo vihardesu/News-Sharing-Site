@@ -1,0 +1,84 @@
+header{
+	text-align: center;
+
+	color:black;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: black;
+
+	font-size: 30px;
+	border-style: outset;
+	border-color: skyblue;
+	border-width: 5px;
+	
+	background-color: skyblue;
+}
+#return{
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+.login{
+	position: absolute;
+	height: auto;
+	margin: 20px 10px;
+	top:40px;
+	right:0;
+	position: absolute;
+	max-width: 150px;
+
+}
+#loggedAs{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 15px;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	position: absolute;
+	height: 10px;
+	top: 110px;
+	right: 6px;
+	padding-right: 5px;
+
+}
+#author{
+	font-size: 20px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+#link{
+	font-size: 15px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+#description{
+	text-align: center;
+	font-size: 20px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+#commentshead{
+	text-align: center;
+	font-size: 30px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+textarea{
+	height: 100px;
+	width: 600px;
+}
+
+table{
+	width: 100%;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+table, th, td{
+	border: 1px solid black;
+}
+th{
+	font-size: 30px;
+}
+.tds{
+	font-size: 20px;
+}
+

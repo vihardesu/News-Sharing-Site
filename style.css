@@ -1,0 +1,112 @@
+#newsHeader{
+	border-color: black;
+	border-style: groove;
+}
+#uploadButton{
+	position: absolute;
+	height: auto;
+	margin: 20px 10px;
+	top:0;
+	left: 0;
+	position: absolute;
+	max-width: 150px;
+}
+#logout{
+	position: absolute;
+	height: auto;
+	margin: 20px 10px;
+	top:0;
+	right:0;
+	max-width: 150px;
+}
+#onionNews{
+	text-align: center;
+	width:100%;
+	color:black;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-width: 2.5px;
+	-webkit-text-stroke-color: black;
+
+	font-size: 45px;
+	border-style: outset;
+	border-color: skyblue;
+	border-width: 5px;
+	
+	background-color: skyblue;
+}
+#loggedAs{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	position: absolute;
+	height: 50%;
+	top: 68px;
+	right: 6px;
+	padding-right: 5px;
+
+}
+#login{
+	position: absolute;
+	height: auto;
+	margin: 20px 10px;
+	top:0;
+	right:0;
+	position: absolute;
+	max-width: 150px;
+
+}
+#siteTitle{
+	text-align: center;
+
+	color:black;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: black;
+
+	font-size: 60px;
+	border-style: outset;
+	border-color: skyblue;
+	border-width: 5px;
+	
+	background-color: skyblue;
+}
+
+.box{
+	max-height: 50%;
+	max-width: 100%;
+}
+.tableHeaders{
+	text-align: center;
+	width:100%;
+	color:black;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-width: 2.5px;
+	-webkit-text-stroke-color: black;
+
+	font-size: 45px;
+	border-style: outset;
+	border-color: skyblue;
+	border-width: 5px;
+	
+	background-color: skyblue;
+}
+#userArticlesHeader{
+	position: absolute;
+	top:500px;
+}
+#artnum{
+	font-size: 30px;
+}
+.userArticlesDescription{
+	font-size: 15px;
+}
+#userArticles{
+	margin: 50px;
+	width:60%;
+	font-size: 20px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}

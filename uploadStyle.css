@@ -1,0 +1,50 @@
+#title{
+	height: 200px;
+	width: 200px;
+	background-color: skyblue;
+}
+#uploadFile{
+	height: 125px;
+	width: 250px;
+	background-color: skyblue;
+	position: absolute;
+	left:240px;
+	top: 90px;
+}
+#pageTitle{
+	text-align: center;
+	position: absolute;
+	top:0;
+	left:240px;
+	color:black;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: black;
+
+	font-size: 60px;
+	border-style: outset;
+	border-color: skyblue;
+	border-width: 5px;
+	
+	background-color: skyblue;
+}
+#description{
+	background-color: skyblue;
+	height: 400px;
+	width: 650px;
+}
+
+textarea{
+	width: 500px;
+	height:300px;
+}
+.pretext{
+	font-size: 30px;
+}
+#container{
+	background-color: white;
+}
+html{
+	background-color: white;
+}
